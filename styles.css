@@ -1,0 +1,31 @@
+/* Base Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Grids */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Recipe Cards */
+.recipe-card {
+  transition: transform 0.3s ease;
+}
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Loading Spinner */
+.loading {
+  display: none;
+  text-align: center;
+}
+.loading.active {
+  display: block;
+}
